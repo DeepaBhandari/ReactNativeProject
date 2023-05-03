@@ -9,16 +9,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const LandingScreen = ({ navigation }) => {
+const SignUpScreen = ({ onSignUp }) => {
   return (
     <View style={styles.container}>
-      <Text>Public Landing Screen</Text>
-      <Button
-        title='Go to Sign In'
-        onPress={() => navigation.navigate('Sign In')}
-      />
+      <Text>Public Sign Up Screen</Text>
+      <Button title='Sign Up' onPress={onSignUp} />
     </View>
   );
 };
 
-export default LandingScreen;
+export default SignUpScreen;
